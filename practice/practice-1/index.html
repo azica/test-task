@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="openModalBtn">Open Modal</button>
+
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <form class="form" id="modalForm">
+                    <span class="form__image-close modal__close-button" id="closeButton">
+                        <img src="./images/close.svg" alt="close">
+                    </span>
+                    <h2 class="form__title">Стать партнёром проекта</h2>
+                    <div class="form__top-control">
+                        <div class="form__top-controls">
+                            <div class="form__control">
+                                <label for="name" class="form__label">Название организации</label>
+                                <input type="text" class="form__input" name="name" placeholder="АВЦ" required id="name">
+                            </div>
+                            <div class="form__control">
+                                <label for="phone" class="form__label">Телефон</label>
+                                <input type="phone" class="form__input" name="phone" placeholder="+7 933 848-34-33"
+                                    required id="phone">
+                            </div>
+                            <div class="form__control">
+                                <label for="email" class="form__label">E-mail</label>
+                                <input type="email" class="form__input" name="name" placeholder="avc@gmail.com" required
+                                    id="email">
+                            </div>
+                        </div>
+                        <div class="form__image-wrap">
+                            <p> <span>✱ </span>Логотип (jpeg, png)</p>
+                            <div class="form__image">
+                                <img src="./images/men.png" alt="men">
+                                <div class="form__upload">
+                                    <label for="file">Выберите файл</label>
+                                    <input type="file" name="file" class="form__upload-input" id="file" />
+                                </div>
+                                <span class="form__image-close">
+                                    <img src="./images/close.svg" alt="close">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__control">
+                        <label for="direction" class="form__label">Направление</label>
+                        <select name="direction" id="direction" class="form__input form__select">
+                            <option value="ecology">Экология</option>
+                            <option value="history">history</option>
+                            <option value="math">Math</option>
+                        </select>
+                    </div>
+
+                    <div class="form__control form__control-global">
+                        <input type="text" class="form__input" name="avc" placeholder="avc.ru" id="avc">
+                    </div>
+                    <div class="form__control form__control-vk">
+                        <input type="text" class="form__input" name="vk" placeholder="vk" id="vk">
+                    </div>
+                    <div class="form__control form__control-ok">
+                        <input type="text" class="form__input" name="ok" placeholder="ok.com/shans" id="ok">
+                    </div>
+                    <div class="form__control form__control-facebook">
+                        <input type="text" class="form__input" name="facebook" placeholder="facebook.com/shans"
+                            id="facebook">
+                    </div>
+                    <div class="form__control form__control-instagram">
+                        <input type="text" class="form__input" name="instagram" placeholder="instagram.com/shans"
+                            id="instagram">
+                    </div>
+                    <div class="form__control form__control-youtube">
+                        <input type="text" class="form__input" name="youtube" placeholder="youtube.com/shans"
+                            id="youtube">
+                    </div>
+
+                    <div class="form__control">
+                        <label for="director" class="form__label">Руководитель</label>
+                        <input type="text" class="form__input" name="youtube" placeholder="director" id="director">
+                    </div>
+
+                    <button type="submit" class="form__submit" id="submitButton" disabled>Стать партнёром
+                        проекта</button>
+                    <button type="button" class="form__cancel" id="cancelButton">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js" defer></script>
+
+</body>
+
+</html>
